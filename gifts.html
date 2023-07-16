@@ -112,6 +112,32 @@
             border-radius: 15px;
             box-shadow: 0 10px 25px rgb(0 0 0);
         }
+
+        .br-div {
+            height: 1.5rem;
+        }
+
+        @media only screen and (max-width: 768px) {
+
+            /* For mobile phones: */
+            .gift-container {
+                background-color: wheat;
+                padding: 1rem 0.5rem;
+                text-align: center;
+                color: #722F37;
+                width: 100%;
+            }
+
+            .wedding-gift-list {
+                font-style: italic;
+                font-size: 2rem;
+                font-family: 'Syne Mono', monospace;
+            }
+
+            .row {
+                margin-right: 0rem;
+            }
+        }
     </style>
     <nav class="navbar navbar-expand-lg navbar-light bg-primary">
         <div class="container-fluid">
@@ -141,13 +167,13 @@
 
     <section id="Home" class="body-col d-flex align-items-center min-vh-100">
         <div>
-            <div class="row justify-content-between align-items-center">
+            <div class="row justify-content-around align-items-center">
                 <div class="col-md-4 d-none d-md-block">
                     <div class="image-container">
                         <img src="bg1.jpg" class="w-100 image image2" />
                     </div>
                 </div>
-                <div class="col-md-7 p-2 p-md-4">
+                <div class="col-md-6 text-center text-md-start">
                     <div class="wedding-gift-list">
                         #meetthe<span>IA</span>s
                     </div>
@@ -155,16 +181,18 @@
                         14th September 2023
                     </div>
                     <div class="py-2 py-md-3 fs-5">
-                        You may know us as Ise and Ini, and we are overjoyed to share the news that
-                        <br /> we are tying the knot!
-                        😊💍😍
+                        <div>You may know us as Ise and Ini, and we are overjoyed to share the news that</div>
+                        <div> we are tying the knot! 😊💍😍</div>
+
+                        <br />
+                        <div>
+                            Your friendship and love means the world to us, and we are truly grateful that you want to
+                            take
+                            an
+                            extra step
+                            in showering us with material gifts 🥰🥰🥰 as we approach our special day.</div>
                         <br /><br />
-                        Your friendship and love means the world to us, and we are truly grateful that you want to take
-                        an
-                        extra step
-                        in showering us with material gifts 🥰🥰🥰 as we approach our special day.
-                        <br /><br />
-                        We cherish you dearly and love you from the bottom of our hearts. 💝
+                        <div>We cherish you dearly and love you from the bottom of our hearts. 💝</div>
                     </div>
                 </div>
             </div>
@@ -175,29 +203,29 @@
             <div
                 class="gift-container magicpattern d-flex flex-column min-vh-100 justify-content-center align-items-center">
                 <div class="gift-container">
-                    <div class="wedding-gift-list">Wedding Gift List</div>
+                    <div class="wedding-gift-list">Gift List</div>
                     <div class="fs-6">WE ARE OPEN TO MONETARY GIFTS TOWARDS OUR NEW LIFE TOGETHER.</div>
-                    <h5 class="pt-2 pt-md-4">Account Information</h5>
+                    <div class="br-div"></div>
+                    <h5 class="pt-2 pt-md-4"><u>Account Information</u></h5>
                     <div class="text-nowrap">
-                        <div class="d-flex justify-content-between">
+                        <div class="d-md-flex justify-content-between">
                             <div>
                                 <div>
                                     <div class="fs-4 fw-bold">GBP</div>
-                                    <div class="d-flex fs-5">
+                                    <div class="d-flex justify-content-center fs-5">
                                         <div class="text-center">
                                             <div>Account Details:</div>
                                             <div class="fw-bold">Adeyemi Iseoluwa</div>
                                             <div>Sort Code: <span class="fw-bold">11-05-05</span></div>
                                             <div>Account Number: <span class="fw-bold">33404669</span></div>
                                             <div>Bank Name: <span class="fw-bold">Halifax</span></div>
-                                            <br />
-                                            <br />
+                                            <div class="br-div"></div>
                                         </div>
                                     </div>
                                 </div>
                                 <div>
                                     <div class="fs-4 fw-bold">CAD</div>
-                                    <div class="d-flex fs-5">
+                                    <div class="d-flex justify-content-center fs-5">
                                         <div class="text-center">
                                             <div class="fw-bold">inioluwaayileka@gmail.com</div>
                                             <div>Bank Name: <span class="fw-bold">INTERAC</span></div>
@@ -206,24 +234,23 @@
                                 </div>
                             </div>
                             <div class="ps-md-5">
-                                <div>
+                                <div class="pt-3">
                                     <div class="fs-4 fw-bold">NGN</div>
-                                    <div class="d-flex fs-5">
+                                    <div class="d-flex fs-5 justify-content-center">
                                         <div class="text-center">
                                             <div>Account Details:</div>
                                             <div class="fw-bold">Adeyemi Iseoluwa</div>
                                             <div>Bank Name: <span class="fw-bold">Stanbic IBTC</span></div>
                                             <div>Account Number: <span class="fw-bold">0014336183</span></div>
-                                            <br />
-                                            <br />
-                                            <br />
+                                            <div class="br-div"></div>
+                                            <div class="br-div d-none d-md-block"></div>
                                         </div>
                                     </div>
                                 </div>
                                 <div>
                                     <div>
                                         <div class="fs-4 fw-bold">Amazon E-Gift</div>
-                                        <div class="d-flex fs-5">
+                                        <div class="d-flex justify-content-center fs-5">
                                             <div class="text-center">
                                                 <div>Gift cards to be addressed to:</div>
                                                 <div class="fw-bold">inioluwaayileka@gmail.com</div>
@@ -235,7 +262,7 @@
                         </div>
                     </div>
 
-                    <br />
+                    <div class="br-div"></div>
                     <div class="mt-2 mt-md-4">
                         THANK YOU SO MUCH FOR YOUR WARM WISHES AND LOVELY GIFTS
                         <div class="couples-name fw-bold fs-2">
@@ -250,22 +277,26 @@
         <div class="body-col">
             <div
                 class="venue-container magicpattern d-flex flex-column min-vh-100 justify-content-center align-items-center">
-                <div>
+                <div class="text-center text-md-start p-2 p-md-0">
                     <div>
                         <div class="fs-6 fst-italic">Church Venue: </div>
                         <div class="fs-5">Scripture Pasture Christian Center (SPCC)</div>
                         <div class="fs-5">Plots 9 & 9A, Plot H1, Educational Zone, off Sango Poly Road</div>
                         <div class="fs-5">Ibadan, Oyo State, Nigeria</div>
-                        <a href="https://goo.gl/maps/FAYRNx3XFBL3kRw86" target="_blank" class="d-none d-md-inline-block btn btn-success mt-2 mt-md-3">Show on Map</a>
-                        <a href="geo:7.4340849,3.9011142" target="_blank" class="d-md-inline-block d-md-none btn btn-success mt-2 mt-md-3">Show on Map</a>
+                        <a href="https://goo.gl/maps/FAYRNx3XFBL3kRw86" target="_blank"
+                            class="d-none d-md-inline-block btn btn-success mt-2 mt-md-3">Show on Map</a>
+                        <a href="geo:7.4340849,3.9011142" target="_blank"
+                            class="d-md-inline-block d-md-none btn btn-success mt-2 mt-md-3">Show on Map</a>
                     </div>
-                    <div class="mt-2 mt-md-5">
+                    <div class="mt-3 mt-md-5">
                         <div class="fs-6 fst-italic">Reception Venue: </div>
                         <div class="fs-5">Manhattan Hall</div>
                         <div class="fs-5">CV2F+H3M, Eleyele Road, Jericho 200284</div>
                         <div class="fs-5">Ibadan, Oyo State, Nigeria</div>
-                        <a href="https://goo.gl/maps/1kv6thfaivKRKHwe9" target="_blank" class=" d-inline-block btn btn-success mt-2 mt-md-3">Show on Map</a>
-                        <a href="geo:7.4014705,3.8726639" target="_blank" class="d-md-inline-block d-md-none btn btn-success mt-2 mt-md-3">Show on Map</a>
+                        <a href="https://goo.gl/maps/1kv6thfaivKRKHwe9" target="_blank"
+                            class="d-inline-block btn btn-success mt-2 mt-md-3">Show on Map</a>
+                        <a href="geo:7.4014705,3.8726639" target="_blank"
+                            class="d-md-inline-block d-md-none btn btn-success mt-2 mt-md-3">Show on Map</a>
                     </div>
                 </div>
             </div>
