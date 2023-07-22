@@ -1,304 +1,260 @@
 <!doctype html>
 <html lang="en">
+
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>#meettheIAs</title>
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>#meettheIAs</title>
+  <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+  <link rel="stylesheet" href="fonts/icomoon/style.css">
+
+  <link rel="stylesheet" href="css/owl.carousel.min.css">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+
+  <!-- Style -->
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/fonts.css" />
     <link rel="manifest" href="site.webmanifest">
+
 </head>
+
 <body>
-    <style>
-        body {
-            overflow-x: hidden;
-        }
-
-        #Home,
-        .venue-container {
-            background-color: rgba(114, 47, 55, 0.85);
-        }
 
 
-        .bg-primary {
-            background-color: #722F37 !important;
-        }
+  <aside class="sidebar">
+    <div class="toggle">
+      <a href="#" class="js-menu-toggle menu-toggle">
+        <span id="toggle" class="icon-menu text-black"></span>
+      </a>
+    </div>
+    <div class="side-inner">
 
-        .primary-text {
-            color: #ab936b !important;
-        }
+      <div class="share">
+        <h4 class="pt-5"><a class="pointer" onclick="loadPage('home')">Start to forever</a></h4>
+        <h4 class="py-3"><a class="pointer" onclick="loadPage('venue')">Wedding Details</a></h4>
+        <h4><a class="pointer" onclick="loadPage('gifts')">Gifts</a></h4>
 
-        .primary-bg {
-            background-color: #ab936b;
-        }
+      </div>
 
-        .sec-bg {
-            background-color: wheat;
-        }
+    </div>
 
-        .navbar-toggler:active,
-        .navbar-toggler:focus {
-            border: none;
-            box-shadow: none;
-        }
+  </aside>
 
-        .navbar-collapse {
-            flex-grow: 0;
-        }
 
-        .text-bold {
-            font-weight: 600;
-        }
-
-        .body-col {
-            color: wheat;
-        }
-
-        i {
-            color: #FF0000;
-        }
-
-        .gift-container {
-            background-color: wheat;
-            padding: 1rem 3rem;
-            text-align: center;
-            color: #722F37;
-            box-shadow: 0 2px 10px rgb(0 0 0);
-            border-radius: 5px;
-        }
-
-        .wedding-gift-list {
-            font-style: italic;
-            font-size: 3rem;
-            font-family: 'Syne Mono', monospace;
-        }
-
-        .couples-name {
-            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-        }
-
-        .cus-mg-top {
-            margin-top: 6rem !important;
-        }
-
-        .image-container {
-            position: relative;
-            width: 400px;
-            /* Adjust the width to your desired size */
-            height: 300px;
-            /* Adjust the height to your desired size */
-        }
-
-        .image1,
-        .image2 {
-            position: absolute;
-        }
-
-        .image1 {
-            z-index: 1;
-            transform: rotate(-10deg);
-            border-radius: 15px;
-            box-shadow: 0 10px 25px rgb(0 0 0);
-        }
-
-        .image2 {
-            z-index: 2;
-            transform: rotate(80deg);
-            border-radius: 15px;
-            box-shadow: 0 10px 25px rgb(0 0 0);
-        }
-
-        .br-div {
-            height: 1.5rem;
-        }
-
-        @media only screen and (max-width: 768px) {
-
-            /* For mobile phones: */
-            .gift-container {
-                background-color: wheat;
-                padding: 5rem 0.5rem;
-                text-align: center;
-                color: #722F37;
-                width: 100%;
-            }
-
-            .wedding-gift-list {
-                font-style: italic;
-                font-size: 2rem;
-                font-family: 'Syne Mono', monospace;
-            }
-
-            .row {
-                margin-right: 0rem;
-            }
-        }
-    </style>
-    <nav class="navbar navbar-expand-lg navbar-light bg-primary fixed-top">
-        <div class="container-fluid">
-            <div class="fs-3 primary-text fw-bold my-1 my-md-1">
-                #meetthe<span>IA</span>s
+  <main>
+    <section id="Home" class="site-section d-block">
+      <div class="venue-container d-flex flex-column min-vh-100 justify-content-center align-items-center">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-md-9">
+              <div class="d-flex justify-content-center">
+                <img class="logo" src="images/logo.png" />
+              </div>
+              <div class="text-center">
+                <div class="alice">WE ARE GETTING MARRIED</div>
+                <div class="slogan">#meettheIAs</div>
+                <div class="save-the-date">Save the date</div>
+                <div class="date">Date: 14th September, 2023</div>
+              </div>
+              <div class="d-flex justify-content-center fs-6 my-2 my-md-4">
+                <div class="text-center timewrapper">
+                  <div id="days"></div>
+                  <div>Days</div>
+                </div>
+                <div class="ml-1 ml-md-3 text-center timewrapper">
+                  <div id="hours"></div>
+                  <div>Hours</div>
+                </div>
+                <div class="ml-1 ml-md-3 text-center timewrapper">
+                  <div id="minutes"></div>
+                  <div>minutes</div>
+                </div>
+                <div class="ml-1 ml-md-3 text-center timewrapper">
+                  <div id="seconds"></div>
+                  <div>seconds</div>
+                </div>
+              </div>
             </div>
-            <button class="navbar-toggler primary-bg" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon primary-bg"></span>
-            </button>
-            <div class="collapse navbar-collapse pe-2 pe-md-5 me-md-5" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="primary-text text-bold nav-link active" aria-current="page" href="#Home">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="primary-text text-bold nav-link" href="#Gifts">Gifts</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="primary-text text-bold nav-link" href="#Venue">Venue</a>
-                    </li>
-                </ul>
-            </div>
+
+
+          </div>
         </div>
-    </nav>
-
-    <section id="Home" class="body-col d-flex align-items-center min-vh-100">
-        <div>
+      </div>
+    </section>
+    <section id="Venue" class="container d-none">
+      <div class="body-col">
+        <div class="venue-container d-flex flex-column min-vh-100 justify-content-center align-items-center">
+          <div class="text-center text-md-start w-100 p-2 p-md-0">
+            <div class="secheaders">
+              <div class="detheader">Wedding details</div>
+              <div class="d-flex align-items-center justify-content-center">
+                <span class="secheadersicondivider"></span>
+                <span id="toggle" class=" px-2 px-md-3 icon-heart secheadersicon"></span>
+                <span class="secheadersicondivider"></span>
+              </div>
+            </div>
             <div class="row justify-content-around align-items-center">
-                <div class="col-md-4 d-none d-md-block">
-                    <div class="image-container">
-                        <img src="bg1.jpg" class="w-100 image image2" />
-                    </div>
-                </div>
-                <div class="col-md-6 text-center text-md-start">
-                    <div class="wedding-gift-list">
-                        #meetthe<span>IA</span>s
-                    </div>
-                    <div class="fst-italic fs-4">
-                        14th September 2023
-                    </div>
-                    <div class="py-2 py-md-3 fs-5">
-                        <div>You may know us as Ise and Ini, and we are overjoyed to share the news that</div>
-                        <div> we are tying the knot! 😊💍😍</div>
-
-                        <br />
-                        <div>
-                            Your friendship and love means the world to us, and we are truly grateful that you want to
-                            take
-                            an
-                            extra step
-                            in showering us with material gifts 🥰🥰🥰 as we approach our special day.</div>
-                        <br /><br />
-                        <div>We cherish you dearly and love you from the bottom of our hearts. 💝</div>
-                    </div>
-                </div>
+              <div class="col-md-4 d-flex align-items-center">
+                <img src="images/spcc.jpg" class="churchimg w-100" />
+              </div>
+              <div class="col-md-4 church">
+                <div class="fs-6 fst-italic">Church Venue: </div>
+                <div class="fs-5">Scripture Pasture Christian Center (SPCC)</div>
+                <div class="fs-5">Plots 9 & 9A, Plot H1, Educational Zone, off Sango Poly Road</div>
+                <div class="fs-5">Ibadan, Oyo State, Nigeria</div>
+                <a href="https://goo.gl/maps/FAYRNx3XFBL3kRw86" target="_blank"
+                  class="d-inline-block btn churchmap mt-2 mt-md-3">Show on Map</a>
+              </div>
             </div>
-        </div>
-    </section>
-    <section id="Gifts">
-        <div>
-            <div class="sec-bg d-flex flex-column min-vh-100 justify-content-center align-items-center">
-                <div class="gift-container">
-                    <div class="wedding-gift-list">Gift List</div>
-                    <div class="fs-5">We are open to monetary gifts towards our new life together.</div>
-                    <div class="br-div"></div>
-                    <h5 class="pt-2 pt-md-4"><u>Account Information</u></h5>
-                    <div class="text-nowrap">
-                        <div class="d-md-flex justify-content-between">
-                            <div>
-                                <div>
-                                    <div class="fs-4 fw-bold">GBP</div>
-                                    <div class="d-flex justify-content-center fs-5">
-                                        <div class="text-center">
-                                            <div>Account Details:</div>
-                                            <div class="fw-bold fst-italic">Adeyemi Iseoluwa</div>
-                                            <div>Sort Code: <span class="fw-bold fst-italic">11-05-05</span></div>
-                                            <div>Account Number: <span class="fw-bold fst-italic">33404669</span></div>
-                                            <div>Bank Name: <span class="fw-bold fst-italic">Halifax</span></div>
-                                            <div class="br-div"></div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div>
-                                    <div class="fs-4 fw-bold">CAD</div>
-                                    <div class="d-flex justify-content-center fs-5">
-                                        <div class="text-center">
-                                            <div class="fw-bold fst-italic">inioluwaayileka@gmail.com</div>
-                                            <div>Bank Name: <span class="fw-bold fst-italic">INTERAC</span></div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="ps-md-5">
-                                <div class="pt-3 pt-md-0">
-                                    <div class="fs-4 fw-bold">NGN</div>
-                                    <div class="d-flex fs-5 justify-content-center">
-                                        <div class="text-center">
-                                            <div>Account Details:</div>
-                                            <div class="fw-bold fst-italic">Adeyemi Iseoluwa</div>
-                                            <div>Bank Name: <span class="fw-bold fst-italic">Stanbic IBTC</span></div>
-                                            <div>Account Number: <span class="fw-bold fst-italic">0014336183</span></div>
-                                            <div class="br-div"></div>
-                                            <div class="br-div d-none d-md-block"></div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div>
-                                    <div>
-                                        <div class="fs-4 fw-bold">Amazon E-Gift</div>
-                                        <div class="d-flex justify-content-center fs-5">
-                                            <div class="text-center">
-                                                <div>Gift cards to be addressed to:</div>
-                                                <div class="fw-bold fst-italic">inioluwaayileka@gmail.com</div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+            <div class="row justify-content-around cus-mg-top col-rev">
 
-                    <div class="br-div"></div>
-                    <div class="mt-2 mt-md-4 h5">
-                        THANK YOU SO MUCH FOR YOUR WARM WISHES AND LOVELY GIFTS
-                        <div class="couples-name fw-bold fs-2">
-                            ISEOLUWA & INIOLUWA
-                        </div>
-                    </div>
-                </div>
+              <div class=" col-md-4 reception">
+                <div class="fs-6 fst-italic">Reception Venue: </div>
+                <div class="fs-5">Manhattan Hall</div>
+                <div class="fs-5">CV2F+H3M, Eleyele Road, Jericho 200284</div>
+                <div class="fs-5">Ibadan, Oyo State, Nigeria</div>
+                <a href="https://goo.gl/maps/1kv6thfaivKRKHwe9" target="_blank"
+                  class="d-inline-block btn receptionmap mt-2 mt-md-3">Show on Map</a>
+              </div>
+              <div class="col-md-4 d-flex align-items-center">
+
+                <img src="images/manhattan.jpeg" class="receptionimg churchimg w-100" />
+              </div>
             </div>
+          </div>
         </div>
+      </div>
     </section>
-    <section id="Venue">
-        <div class="body-col">
-            <div
-                class="venue-container d-flex flex-column min-vh-100 justify-content-center align-items-center">
-                <div class="text-center text-md-start p-2 p-md-0">
+    <section id="Gifts" class="container d-none">
+      <div>
+        <div class="sec-bg d-flex flex-column min-vh-100 justify-content-center align-items-center">
+          <div class="w-100 text-center">
+            <div class="secheaders">
+              <div class="detheader">Gifts for the Couple</div>
+              <div class="d-flex align-items-center justify-content-center">
+                <span class="secheadersicondivider"></span>
+                <span id="toggle" class=" px-2 px-md-3 icon-heart secheadersicon"></span>
+                <span class="secheadersicondivider"></span>
+              </div>
+            </div>
+            <div class="row justify-content-around">
+              <div class="col-md-6 accountdetails">
+
+                <div class="fs-5">We are open to monetary gifts towards our new life together.</div>
+                <div class="br-div"></div>
+                <div class="row justify-content-around p-1 p-2">
+                  <div class="col-md-6 indaccdets">
                     <div>
-                        <div class="fs-6 fst-italic">Church Venue: </div>
-                        <div class="fs-5">Scripture Pasture Christian Center (SPCC)</div>
-                        <div class="fs-5">Plots 9 & 9A, Plot H1, Educational Zone, off Sango Poly Road</div>
-                        <div class="fs-5">Ibadan, Oyo State, Nigeria</div>
-                        <a href="https://goo.gl/maps/FAYRNx3XFBL3kRw86" target="_blank"
-                            class="d-inline-block btn btn-success mt-2 mt-md-3">Show on Map</a>
+                      <div class="fs-4 fw-bold">GBP</div>
+                      <div class="d-flex justify-content-center fs-5">
+                        <div class="text-center">
+                          <div class="fw-bold fst-italic">Adeyemi Iseoluwa</div>
+                          <div>Sort Code: <span class="fw-bold fst-italic">11-05-05</span></div>
+                          <div>Account Number: <span class="fw-bold fst-italic">33404669</span></div>
+                          <div>Bank Name: <span class="fw-bold fst-italic">Halifax</span></div>
+                          <div class="br-div"></div>
+                        </div>
+                      </div>
                     </div>
-                    <div class="cus-mg-top">
-                        <div class="fs-6 fst-italic">Reception Venue: </div>
-                        <div class="fs-5">Manhattan Hall</div>
-                        <div class="fs-5">CV2F+H3M, Eleyele Road, Jericho 200284</div>
-                        <div class="fs-5">Ibadan, Oyo State, Nigeria</div>
-                        <a href="https://goo.gl/maps/1kv6thfaivKRKHwe9" target="_blank"
-                            class="d-inline-block btn btn-success mt-2 mt-md-3">Show on Map</a>
+                  </div>
+                  <div class="col-md-6 indaccdets">
+                    <div class="fs-4 fw-bold">NGN</div>
+                    <div class="d-flex fs-5 justify-content-center">
+                      <div class="text-center">
+                        <div class="fw-bold fst-italic">Adeyemi Iseoluwa</div>
+                        <div>Bank Name: <span class="fw-bold fst-italic">Stanbic IBTC</span></div>
+                        <div>Account Number: <span class="fw-bold fst-italic">0014336183</span>
+                        </div>
+                        <div class="br-div"></div>
+                        <div class="br-div d-none d-md-block"></div>
+                      </div>
                     </div>
+                  </div>
+                  <div class="col-md-6 indaccdets">
+                    <div class="fs-4 fw-bold">CAD</div>
+                    <div class="d-flex justify-content-center fs-5">
+                      <div class="text-center">
+                        <div class="fw-bold fst-italic">inioluwaayileka@gmail.com</div>
+                        <div>Bank Name: <span class="fw-bold fst-italic">INTERAC</span></div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-md-6 indaccdets">
+                    <div class="fs-4 fw-bold">Amazon E-Gift</div>
+                    <div class="d-flex justify-content-center fs-5">
+                      <div class="text-center">
+                        <div>Gift cards to be addressed to:</div>
+                        <div class="fw-bold fst-italic">inioluwaayileka@gmail.com</div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
+              </div>
+              <div class="col-md-5 gifter-details">
+                <div class="d-flex flex-column justify-content-center h-100">
+                  <div class="text-left h4 pb-2 pb-md-4">Your Details</div>
+
+                  <form id="file-upload-form" class="uploader">
+                    <div class="text-left form-group-label">Your Name</div>
+                    <input class="form-group" placeholder="Full Name" />
+                    <div class="text-left">Upload Payment Receipt</div>
+                    <div>
+                      <input id="file-upload" type="file" name="fileUpload" accept="image/*" />
+
+                      <label for="file-upload" id="file-drag">
+                        <img id="file-image" src="#" alt="Preview" class="hidden">
+                        <div id="start"><span class='icon-upload'></span>
+                          <div>Select a file or drag here</div>
+                          <div id="notimage" class="hidden">Please select an image</div>
+                          <span id="file-upload-btn" class="btn btn-primary">Select a file</span>
+                        </div>
+                        <div id="response" class="hidden">
+                          <div id="messages"></div>
+                          <progress class="progress" id="file-progress" value="0">
+                            <span>0</span>%
+                          </progress>
+                        </div>
+                      </label>
+                    </div>
+                    <div class=" pt-2">
+                      <button type="submit" class="submitgifts">Submit</button>
+                    </div>
+                  </form>
+                </div>
+              </div>
             </div>
+
+            <div class="br-div"></div>
+            <div class="appreciation">
+              THANK YOU SO MUCH FOR YOUR WARM WISHES AND LOVELY GIFTS
+              <div class="couples-name fw-bold fs-2">
+                ISEOLUWA & INIOLUWA
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
-        crossorigin="anonymous"></script>
+    <footer class="yourstruly">
+      <div class="d-flex justify-content-center flex-column text-center">
+        <div>Copyright © 2023 Ini weds Ise</div>
+        <div>Powered by <a class="px-1 yourstruly-ig">@seunadanike</a></div>
+      </div>
+    </footer>
+  </main>
+
+
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/main.js"></script>
 </body>
 
 </html>
