@@ -612,6 +612,9 @@ main .post-content .post-meta {
 }
 
 @media only screen and (max-width: 768px) {
+  .detheader{
+    font-size: 2rem;
+  }
   .col-rev {
     flex-direction: column-reverse;
   }
@@ -621,7 +624,7 @@ main .post-content .post-meta {
   }
 
   .gifter-details {
-    margin-top: 3rem !important;
+    margin-top: 7rem !important;
     margin: 0rem 1rem;
   }
 
