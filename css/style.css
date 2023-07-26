@@ -626,7 +626,7 @@ main .post-content .post-meta {
 }
 
 .champagne-gold {
-  font-size: 3rem;
+  font-size: 2rem;
   font-family: 'Carolyna', sans-serif;
   color: #e8d6b3;
   text-shadow: 0px 0px 2px #000;
@@ -635,7 +635,7 @@ main .post-content .post-meta {
 }
 
 .wine {
-  font-size: 3rem;
+  font-size: 2rem;
   font-family: 'Carolyna', sans-serif;
   color: #7D0202;
   text-shadow: 0px 0px 4px #7D0202;
@@ -655,7 +655,7 @@ main .post-content .post-meta {
 
 .colors-of-the-day-label {
   font-family: 'CandleScript', sans-serif;
-  font-size: 3rem;
+  font-size: 1.5rem;
   color: #7D0202;
   font-weight: 600;
   text-shadow: 0px 0px 1px #7D0202;
@@ -670,14 +670,14 @@ main .post-content .post-meta {
 
 @media only screen and (max-width: 768px) {
   .champagne-gold, .wine{
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
 
   .amp{
     font-size: 1.5rem;
   }
   .colors-of-the-day-label {
-    font-size: 1.5rem;
+    font-size: 1rem;
   }
   
   .col-rev {
