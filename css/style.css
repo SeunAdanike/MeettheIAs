@@ -2,7 +2,7 @@ body {
   font-family: "Muli", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-weight: 300;
   background-color: rgba(171, 147, 107, .1);
-  background-image: radial-gradient(#722F37 0.30000000000000004px, transparent 0.30000000000000004px), radial-gradient(#722F37 0.30000000000000004px, #eeece8 0.30000000000000004px);
+  background-image: radial-gradient(#7D0202 0.30000000000000004px, transparent 0.30000000000000004px), radial-gradient(#7D0202 0.30000000000000004px, #eeece8 0.30000000000000004px);
   background-size: 12px 12px;
   background-position: 0 0, 6px 6px;
 }
@@ -228,7 +228,7 @@ main .post-content .post-meta {
 .menu-toggle span {
   color: #ccc;
   font-size: 2.5rem;
-  background: #722F37;
+  background: #7D0202;
   border-radius: 4px;
   box-shadow: 0 10px 25px rgb(0 0 0);
 }
@@ -277,16 +277,17 @@ main .post-content .post-meta {
 
 .date {
   font-family: 'Alice', serif;
-  color: #FFFFFF;
-  font-size: 22px;
+  color: rgba(125,2,2, 1);
+  font-size: 3rem;
   line-height: 25px;
   stroke: #FFFFFF;
   -webkit-text-stroke-color: #FFFFFF;
-  text-shadow: 0px 0px 0px rgba(57.80000000000001, 49.3813043478261, 49.3813043478261, 0.94);
+  text-shadow: 2px 0px 1px #131313;
+
 }
 
 .timewrapper {
-  background: linear-gradient(180deg, #76606D 0%, #722F37 100%);
+  background: linear-gradient(180deg, #76606D 0%, #7D0202 100%);
   padding: 1rem;
   border-radius: 5px;
   color: #FFFFFF;
@@ -301,15 +302,13 @@ main .post-content .post-meta {
 }
 
 .save-the-date {
-  color: #722F37;
-  font-size: 18px;
+  color: rgba(125,2,2, 1);
+  font-size: 3.5rem;
   font-weight: 600;
-  text-transform: uppercase;
+  text-transform: capitalize;
   letter-spacing: 2px;
-  -webkit-text-stroke-width: 1px;
-  stroke-width: 1px;
-  -webkit-text-stroke-color: #fff;
-  stroke: #fff;
+  font-family: "Carolyna", Sans-serif;
+  text-shadow: 2px 0px 1px #131313;
 }
 
 .share h4 a {
@@ -322,16 +321,16 @@ main .post-content .post-meta {
 }
 
 .yourstruly-ig {
-  color: #722F37;
+  color: #7D0202;
   font-weight: 600;
 }
 
 .yourstruly-ig:hover {
-  color: wheat;
+  color: #e8d6b3;
 }
 
 .detheader {
-  color: #722F37;
+  color: #7D0202;
   font-size: 3rem;
   font-weight: 400;
   font-family: 'Alice', sans-serif;
@@ -344,8 +343,8 @@ main .post-content .post-meta {
 
 .church {
   font-family: 'Muli', sans-serif;
-  color: #fff;
-  background: #722F37;
+  color: #e8d6b3;
+  background: #7D0202;
   padding: 1rem;
   border-bottom-left-radius: 3rem;
   border-top-left-radius: 3rem;
@@ -355,8 +354,9 @@ main .post-content .post-meta {
 }
 
 .churchmap {
-  background-color: wheat !important;
-  border-color: wheat !important;
+  background-color: #e8d6b3 !important;
+  border-color: #e8d6b3 !important;
+  color: #7D0202;
 }
 
 .cus-mg-top {
@@ -365,8 +365,8 @@ main .post-content .post-meta {
 
 .reception {
   font-family: 'Muli', sans-serif;
-  color: #722F37;
-  background: wheat;
+  color: #7D0202;
+  background: #e8d6b3;
   padding: 1rem;
   border-bottom-right-radius: 3rem;
   border-top-right-radius: 3rem;
@@ -376,35 +376,36 @@ main .post-content .post-meta {
 }
 
 .receptionmap {
-  background-color: #722F37 !important;
-  border-color: #722F37 !important;
-  color: wheat;
+  background-color: #7D0202 !important;
+  border-color: #7D0202 !important;
+  color: #e8d6b3;
 }
 
 .secheadersicon {
-  color: wheat;
+  color: #e8d6b3;
   font-size: 1.5rem;
 }
 
 .secheadersicondivider {
   width: 7vw;
   height: 0.05rem;
-  background-color: #722F37;
+  background-color: #7D0202;
 }
 
 .accountdetails {
   margin-top: 3rem;
-  font-family: 'Alice', sans-serif;
-  background: #722F37;
+  font-family: cursive, sans-serif;
+  background: #7D0202;
   padding: 2rem;
-  color: wheat;
+  color: #e8d6b3;
   box-shadow: 0 10px 25px rgb(0 0 0);
   border-radius: 3rem;
 }
 
 .indaccdets {
   padding: 2rem;
-  font-family: cursive, sans-serifs;
+  font-family: monospace, sans-serifs;
+  font-weight: 600;
 }
 
 .form-group {
@@ -412,7 +413,7 @@ main .post-content .post-meta {
   border: none;
   outline: none;
   padding: 0.5rem 0.4rem;
-  border-bottom: 2px solid #722F37;
+  border-bottom: 2px solid #7D0202;
   border-radius: 5px;
 }
 
@@ -421,7 +422,7 @@ main .post-content .post-meta {
   border: none;
   outline: none;
   padding: 0.5rem 0.4rem;
-  border: 2px solid #722F37;
+  border: 2px solid #7D0202;
 }
 
 .form-group-label {
@@ -437,7 +438,7 @@ main .post-content .post-meta {
 .couples-name {
   font-family: 'Alice';
   font-size: 2rem;
-  color: #722F37;
+  color: #7D0202;
 }
 
 .uploader {
@@ -465,11 +466,11 @@ main .post-content .post-meta {
 }
 
 .uploader label:hover {
-  border-color: #722F37;
+  border-color: #7D0202;
 }
 
 .uploader label.hover {
-  border: 3px solid #722F37;
+  border: 3px solid #7D0202;
   box-shadow: inset 0 0 0 6px #eee;
 }
 
@@ -569,7 +570,7 @@ main .post-content .post-meta {
   color: #5f6982;
 }
 
-.uploader .btn {
+.uploader .btn, .uploader .btn:active {
   display: inline-block;
   margin: 0.5rem 0.5rem 1rem 0.5rem;
   clear: both;
@@ -587,17 +588,21 @@ main .post-content .post-meta {
   color: #fff;
   transition: all 0.2s ease-in-out;
   box-sizing: border-box;
-  background: #722F37;
-  border-color: #722F37;
+  background: #7D0202 !important;
+  border-color: #7D0202;
   cursor: pointer;
+}
+
+.uploader .btn:focus{
+  box-shadow: none;
 }
 
 .submitgifts {
   display: inherit;
-  background-color: #722F37;
-  border-color: #722F37;
+  background-color: #7D0202;
+  border-color: #7D0202;
   outline: none;
-  color: wheat;
+  color: #e8d6b3;
   padding: 0.2rem 1rem;
   border-radius: 5px;
 }
@@ -611,25 +616,86 @@ main .post-content .post-meta {
   cursor: pointer;
 }
 
+.col-rev {
+  margin-bottom: 2rem;
+}
+
+.churchmap,
+.receptionmap {
+  font-weight: 600;
+}
+
+.champagne-gold {
+  font-size: 3rem;
+  font-family: 'Carolyna', sans-serif;
+  color: #e8d6b3;
+  text-shadow: 0px 0px 20px #e8d6b3;
+  margin-top: 1rem;
+  font-weight: 900;
+}
+
+.wine {
+  font-size: 3rem;
+  font-family: 'Carolyna', sans-serif;
+  color: #7D0202;
+  text-shadow: 0px 0px 4px #7D0202;
+  width: min-content;
+  font-weight: 900;
+}
+
+.colors-of-the-day {
+  width: fit-content;
+  margin-bottom: 5rem;
+  margin-top: 3rem;
+}
+
+.colors-of-the-day-label {
+  font-family: 'CandleScript', sans-serif;
+  font-size: 3rem;
+  color: #7D0202;
+  font-weight: 600;
+  text-shadow: 0px 0px 1px #7D0202;
+}
+
+.amp{
+  font-family: 'CandleScript', sans-serif;
+  font-size: 2rem;
+  font-style: italic;
+  color: #7D0202;
+}
+
 @media only screen and (max-width: 768px) {
-  .detheader{
+  .champagne-gold, .wine{
     font-size: 2rem;
   }
+
+  .amp{
+    font-size: 1.5rem;
+  }
+  .colors-of-the-day-label {
+    font-size: 2rem;
+  }
+  
   .col-rev {
     flex-direction: column-reverse;
   }
 
   .save-the-date {
-    font-size: 15px;
+    font-size: 2rem;
+  }
+
+  .date {
+    font-size: 1.5rem;
   }
 
   .gifter-details {
-    margin-top: 7rem !important;
+    margin-top: 3rem !important;
     margin: 0rem 1rem;
   }
 
   .accountdetails {
     margin: 0rem 1rem;
+    line-height: 2;
   }
 
   .cus-mg-top {
@@ -657,7 +723,6 @@ main .post-content .post-meta {
   .yourstruly {
     background: #f9f9f9;
     padding: 1.5em 0em;
-    padding-top: 4rem;
   }
 
   .logo {
@@ -680,7 +745,7 @@ main .post-content .post-meta {
   }
 
   .timewrapper {
-    background: linear-gradient(180deg, #76606D 0%, #722F37 100%);
+    background: linear-gradient(180deg, #76606D 0%, #7D0202 100%);
     padding: 1rem;
     border-radius: 5px;
     color: #FFFFFF;
@@ -693,6 +758,7 @@ main .post-content .post-meta {
 
   .detheader {
     padding-bottom: 1.5rem;
+    font-size: 2rem;
   }
 
   .couples-name {
