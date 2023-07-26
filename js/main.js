@@ -232,16 +232,19 @@ function loadPage(id) {
     document.getElementById('Gifts').classList.replace('d-none', 'd-block');
     document.getElementById('Venue').classList.replace('d-block', 'd-none');
     document.getElementById('Home').classList.replace('d-block', 'd-none');
+    window.location.href = "#Gifts";
   }
   else if (id == 'venue') {
     document.getElementById('Venue').classList.replace('d-none', 'd-block');
     document.getElementById('Home').classList.replace('d-block', 'd-none');
     document.getElementById('Gifts').classList.replace('d-block', 'd-none');
+    window.location.href = "#Venue";
   }
   else {
     document.getElementById('Home').classList.replace('d-none', 'd-block');
     document.getElementById('Venue').classList.replace('d-block', 'd-none');
     document.getElementById('Gifts').classList.replace('d-block', 'd-none');
+    window.location.href = "#Home";
   }
 
   $('body').removeClass('show-sidebar');
