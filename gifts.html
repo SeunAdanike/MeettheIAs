@@ -16,12 +16,13 @@
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="css/bootstrap.min.css">
 
+  <script src="https://www.googleapis.com/" crossorigin="anonymous"></script>
+  <script src="https://apis.google.com" crossorigin="anonymous"></script>
   <!-- Style -->
   <link rel="stylesheet" href="css/style.css">
   <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/fonts.css" />
-    <link rel="manifest" href="site.webmanifest">
-
+  <title>Sidebar #3</title>
 </head>
 
 <body>
@@ -58,9 +59,14 @@
               </div>
               <div class="text-center">
                 <div class="alice">WE ARE GETTING MARRIED</div>
-                <div class="slogan">#meettheIAs</div>
-                <div class="save-the-date">Save the date</div>
-                <div class="date">Date: 14th September, 2023</div>
+
+                <div class="save-the-date">Save Our Date</div>
+                <div class="d-flex align-items-center justify-content-center pb-4">
+                  <span class="secheadersicondivider"></span>
+
+                  <span class="date px-2">14-09-2023</span>
+                  <span class="secheadersicondivider"></span>
+                </div>
               </div>
               <div class="d-flex justify-content-center fs-6 my-2 my-md-4">
                 <div class="text-center timewrapper">
@@ -127,6 +133,17 @@
                 <img src="images/manhattan.jpeg" class="receptionimg churchimg w-100" />
               </div>
             </div>
+            <div class="d-flex justify-content-center">
+              <div class="colors-of-the-day">
+                <div class="colors-of-the-day-label">Colours of the day</div>
+                <div>
+                  <span class="champagne-gold">Champagne Gold</span>
+                  <span class="amp">&</span>
+                  <span class="wine"> Wine
+                  </span>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -145,8 +162,10 @@
             </div>
             <div class="row justify-content-around">
               <div class="col-md-6 accountdetails">
-
-                <div class="fs-5">We are open to monetary gifts towards our new life together.</div>
+                <div class="fs-5">Your kind words and well wishes are greatly appreciated and God bless you. If you are
+                  think of giving us a gift we are thankful
+                </div>
+                <div class="fs-5 mt-1 mt-md-3">We are open to monetary gifts towards our new life together.</div>
                 <div class="br-div"></div>
                 <div class="row justify-content-around p-1 p-2">
                   <div class="col-md-6 indaccdets">
@@ -180,8 +199,8 @@
                     <div class="fs-4 fw-bold">CAD</div>
                     <div class="d-flex justify-content-center fs-5">
                       <div class="text-center">
+                        <div><span class="fw-bold fst-italic">INTERAC</span></div>
                         <div class="fw-bold fst-italic">inioluwaayileka@gmail.com</div>
-                        <div>Bank Name: <span class="fw-bold fst-italic">INTERAC</span></div>
                       </div>
                     </div>
                   </div>
@@ -201,7 +220,7 @@
                 <div class="d-flex flex-column justify-content-center h-100">
                   <div class="text-left h4 pb-2 pb-md-4">Your Details</div>
 
-                  <form id="file-upload-form" class="uploader">
+                  <div id="file-upload-form" class="uploader">
                     <div class="text-left form-group-label">Your Name</div>
                     <input class="form-group" placeholder="Full Name" />
                     <div class="text-left">Upload Payment Receipt</div>
@@ -224,9 +243,9 @@
                       </label>
                     </div>
                     <div class=" pt-2">
-                      <button type="submit" class="submitgifts">Submit</button>
+                      <button onclick="uploadFile()" class="submitgifts">Submit</button>
                     </div>
-                  </form>
+                  </div>
                 </div>
               </div>
             </div>
@@ -235,7 +254,7 @@
             <div class="appreciation">
               THANK YOU SO MUCH FOR YOUR WARM WISHES AND LOVELY GIFTS
               <div class="couples-name fw-bold fs-2">
-                ISEOLUWA & INIOLUWA
+                INIOLUWA & ISEOLUWA
               </div>
             </div>
           </div>
@@ -245,7 +264,8 @@
     <footer class="yourstruly">
       <div class="d-flex justify-content-center flex-column text-center">
         <div>Copyright © 2023 Ini weds Ise</div>
-        <div>Powered by <a class="px-1 yourstruly-ig">@seunadanike</a></div>
+        <div>Powered by <a class="px-1 yourstruly-ig" target="_blank"
+            href="https://www.instagram.com/seun_adanike/">@seunadanike</a></div>
       </div>
     </footer>
   </main>
@@ -255,6 +275,9 @@
   <script src="js/popper.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
   <script src="js/main.js"></script>
+
+  <script src="https://apis.google.com/js/api.js"></script>
+  <script src="js/drive.js"></script>
 </body>
 
 </html>
